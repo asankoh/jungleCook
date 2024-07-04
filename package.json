@@ -1,0 +1,23 @@
+{
+  "name": "junglepractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "daemon": "^1.1.0",
+    "firebase": "^10.12.1",
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "sass": "^1.61.0"
+  },
+  "scripts": {
+    "compile-sass": "sass scss/styles.scss css/styles.css -w",
+    "serve": "live-server"
+  },
+  "author": "",
+  "license": "ISC"
+}

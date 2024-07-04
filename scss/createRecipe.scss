@@ -1,0 +1,149 @@
+.formHolder{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    min-height: 100vh;
+    max-width: 100%;
+   
+    input{
+        border: 0;
+        height: 30px;
+        width: 100%;
+        border-bottom: 3px solid black;
+        margin-bottom: 80px;
+        font-family: Lato;
+        color: black;
+        outline: none;
+    }
+
+    .createRecipe{
+        #attachBtn{
+            width: 110px;
+            height: 40px;
+            background-color: #EFA7A7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 16px;
+            font-family: Caveat;
+            border-radius: 25px;
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            top: 225px;
+            user-select: none;
+            font-weight: bold;
+        }
+    
+       
+    }
+
+
+
+    p{
+    margin-bottom: 0px;
+    }
+
+    
+
+.createRecipe,
+.addIngredients,
+.addInstructions{
+    .title{
+        font-family: Lato;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .recipeMessage{
+        font-family: Caveat;
+        font-size: 25px;
+        padding-bottom: 60px;
+    }
+
+}
+
+
+.addIngredients{
+    position: relative;
+    margin-top: 10px;
+
+    .addBtn{
+        position: absolute;
+        right: 0px;
+        bottom: -500px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+        font-weight: bold;
+    }
+}
+
+.addInstructions{
+  position: relative;
+  margin-top: 25px;
+
+    .addStepBtn{
+        width: 40px;
+        height: 40px;
+        background-color: #EFA7A7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        bottom: -80px;
+        user-select: none;
+        font-weight: bold;
+    }
+}
+
+.createRecipeBtn{
+    margin: auto;
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: #EFA7A7;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    font-family: Caveat;
+    font-size: 20px;
+    box-shadow: 0px 7px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+}
+
+@media screen and (max-width: 768px){
+    .formHolder{
+    padding: 20px;
+
+    .createRecipe{
+
+        .recipeMessage{
+            padding-top: 100px;
+        }
+        #attachBtn{
+            top: 195px;
+            right: 20px;
+
+        }
+    }
+
+    .createRecipeBtn{
+        width: 300px;
+    }
+    }
+}

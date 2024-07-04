@@ -1,0 +1,28 @@
+<div class="account">
+
+<div class="flex-container_account">
+    <div class="boxOne_account">
+        <p class="title">Login Here!</p>
+        <input type="email" placeholder="Email Address:" required size="30" id="login_em">
+        <input type="password" placeholder="Password:" required size="30" id="login_pw">
+        <button id="logBtn">LOGIN</button>
+        <i data-bs-toggle="popover" title="Test User Credentials" data-bs-content="Email: testuser@email.com  Password: Testuser1" class="fa-solid fa-circle-info"></i>
+    </div>
+
+    <div class="boxTwo_account">
+        <p class="subtext">don't have a account?</p>
+        <p class="title">Sign Up</p>
+        <input type="text" placeholder="First Name:" size="35" id="fName">
+        <input type="text" placeholder="Last Name:" size="35" id="lName">
+        <input type="email" placeholder="Email Address:" size="35" id="email">
+        <input type="password" placeholder="Password:" size="35" id="password">
+        <button id="signupBtn">SIGN UP</button>
+    </div>
+</div>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>

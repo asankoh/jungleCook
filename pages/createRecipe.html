@@ -1,0 +1,77 @@
+<div class="formHolder">
+  <div class="createRecipe">
+    <p class="recipeMessage">Hey, create your recipe!</p>
+    <input type="hidden" id="recipe_id">
+    <input type="text" placeholder="Add Recipe Image:"  id="recipe_image" accept="image/*" readonly>
+    <input type="file" accept="image/*" id="file_input" style="display: none;">
+    <input type="text" id="recipe_name" placeholder="Recipe Name:" size="60" required>
+    <input type="text" id="recipe_desc" placeholder="Recipe Description:" size="60">
+    <input type="text" id="recipe_time" placeholder="Recipe Total Time:" size="60">
+    <input type="text" id="recipe_size" placeholder="Recipe Serving Size:" size="60">
+    <label for="file_input" id="attachBtn">
+      Attach Image</label>
+    </input>
+
+  </div>
+
+  <div class="addIngredients">
+    <p class="title">Enter Ingredients:</p>
+    <input type="text" placeholder="Ingredients #1:"size= "60" id="ingred0">
+    <input type="text" placeholder="Ingredients #2:" size="60" id="ingred1">
+    <input type="text" placeholder="Ingredients #3:" size="60" id="ingred2">
+    <div class="addBtn">+</div>
+  </div>
+
+  <div class="addInstructions">
+    <p class="title">Enter Instructions:</p>
+    <input type="text" placeholder="Instruction #1:" size="60" id="step0">
+    <input type="text" placeholder="Instruction #2:" size="60" id="step1">
+    <input type="text" placeholder="Instruction #3:" size="60" id="step2">
+    <div class="addStepBtn">+</div>
+  </div>
+
+  <button id="recipe_action_button" class="createRecipeBtn">Create Recipe</button>
+</div>
+
+<!-- <div class="create-recipe">
+    <div class="create-container">
+      <p class="title">Hey Michael, create your recipe!</p>
+  
+      <div class="create-input-holder">
+        <input type="text" id="addImage" placeholder="Add Recipe Image" />
+        <input type="text" id="recipeName" placeholder="Recipe Name" />
+        <input
+          type="text"
+          id="recipeDescription"
+          placeholder="Recipe Description"
+        />
+        <input type="text" id="recipeTotalTime" placeholder="Recipe Total Time" />
+        <input
+          type="text"
+          id="recipeServingSize"
+          placeholder="Recipe Serving Size"
+        />
+  
+        <div class="create-recipe-ingredients">
+          <p class="create-recipe-ingredients-title">Enter Ingredients:</p>
+  
+          <input type="text" id="ingredient1" placeholder="Ingredient #1" />
+          <input type="text" id="ingredient2" placeholder="Ingredient #2" />
+          <input type="text" id="ingredient3" placeholder="Ingredient #3" />
+          <div id="ingredient" class="add-more">+</div>
+        </div>
+  
+        <div class="create-recipe-instructions">
+          <p class="create-recipe-instructions-title">Enter Instructions:</p>
+          <input type="text" id="instruction1" placeholder="Instruction #1" />
+          <input type="text" id="instruction2" placeholder="Instruction #2" />
+          <input type="text" id="instruction3" placeholder="Instruction #3" />
+          <div id="instruction" class="add-more">+</div>
+        </div>
+  
+        <div class="submit" id="submit">
+          Create Recipe
+        </div>
+      </div>
+    </div>
+  </div> -->

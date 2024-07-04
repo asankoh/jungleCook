@@ -1,0 +1,112 @@
+.account{
+    max-width: 100%;
+    min-height: 100svh; /* 50% of the viewport height */
+    background-color: #FFD972;
+    font-family: Lato;
+
+    .flex-container_account{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto); /* Adjust the number of columns as needed */
+        place-items: center;
+        margin: 0px auto;
+        padding: 10em 5em;
+
+    .boxOne_account, .boxTwo_account{
+              
+    input{
+        border: none;
+        border-bottom-width: medium;
+        display: block;
+        background: transparent;
+        border-bottom: 3px solid black;
+        margin-bottom: 45px;
+        color: black;
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder { 
+        color: black;
+        font-size: 12px;
+    }
+        }
+
+
+        .boxOne_account{
+
+            .title{
+                font-family: LatoBlack;
+                font-size: 26px;
+                padding-bottom: 30px;
+            }
+
+            #logBtn{
+                height: 45px;
+                width: 210px;
+                border: none;
+                border-radius: 43px;
+                text-align: center;
+                color: black;
+                background-color: #FFD972;
+                box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+
+            i{
+                font-size: 20px;
+                cursor: pointer;
+                padding: 25px;
+
+                .popover-body {
+                    font-size: 0.8em;
+                    white-space: pre-line; /* Ensures the text appears in block format */
+                }
+            }
+
+          
+        }
+
+        .boxTwo_account{
+            padding-top: 5em;
+
+            .title{
+                letter-spacing: 2px;
+                font-size: 30px;
+                font-family: Lato;
+                padding-bottom: 40px;
+            }
+
+            .subtext{
+                font-family: LatoIt;
+            }
+
+            #signupBtn{
+                height: 45px;
+                width: 250px;
+                border: none;
+                border-radius: 43px;
+                text-align: center;
+                border-radius: 43px;
+                color: black;
+                background-color: #FFD972;
+                box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: 738px){
+    .account{
+    .flex-container_account{
+        grid-template-columns: repeat(1, auto); /* Adjust the number of columns as needed */
+        .boxOne_account{
+            padding-right: 40px;
+        }
+    }
+        
+    }
+}
+

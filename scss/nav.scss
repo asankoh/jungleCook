@@ -1,0 +1,114 @@
+  nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 999;
+
+
+    .logo{
+      height: 100%;
+      margin-left: 50px;
+      display: flex;
+     }
+
+
+    // Part One of Hamburger Menu Code
+    .mainMenu{
+      display: flex;
+      list-style: none;
+      right: 0;
+      cursor: pointer;
+
+      li a {
+        display: inline-block;
+      }
+
+    }
+
+    .openMenu{
+      font-size: 24px;
+      margin-right: 10px;
+      display: none;
+      i{
+        cursor: pointer;
+      }
+
+    }
+
+    .closeMenu{
+      font-size: 2rem;
+      display: none;
+      i{
+        cursor: pointer;
+      }
+    }
+    // End of Part One of hamburger menu code
+  
+   a {
+    display: flex;
+    justify-content: flex-end;
+    font-family: CaveatRegular;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 45px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: CaveatRegular;
+    font-size: 25px;
+    height: 45px;
+    width: 190px;
+    background-color: #FFD972;
+    border-radius: 43px;
+    border: none;
+    box-shadow: 0px 7px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+}
+
+
+ // The responisveness for the hamburger menu to appear
+@media (max-width: 768px){
+ nav .mainMenu{
+        height: 75%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        background-color: white;
+        /* transition top is the animation of the hamburger menu coming from the top of the page */
+        display: none;
+        z-index: 9999;
+
+
+  }
+  
+
+ nav .mainMenu .closeMenu{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+}
+
+ nav .openMenu{
+  display: block;
+}
+
+
+}
+
+

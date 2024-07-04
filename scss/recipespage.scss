@@ -1,0 +1,130 @@
+.recipe-content,
+.your-recipe-content {
+  background-image: url(../img/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100svh;
+  max-width: 100%;
+  font-family: CaveatBold;
+  font-size: 30px;
+
+.recipe-title{
+  p{
+    padding-top: 130px;
+    text-align: center;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Adjust the number of columns as needed */
+  place-items: center;
+
+.recipe-food {
+  display: flex;
+  padding: 30px;
+  
+  img{
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .ingredients-direction {
+    width: 244px;
+    background-color: white;
+    border-radius: 20px;
+
+  .title-underline {
+      border-bottom: 5px solid black;
+      width: 130px;
+      margin: auto;
+  }
+
+    p{
+    font-family: LatoReg;
+    font-size: 11px;
+    padding: 30px 20px 0px;
+    }
+  
+    h2{
+      font-size: 20px;
+      font-family: LatoReg;
+      text-align: center;
+      padding-top: 23px;
+    }
+
+    h2:hover{
+      color: #FFD972;
+      cursor: pointer;
+    }
+
+    .icon{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 44px;
+
+      img{
+        width: 30px;
+        height: auto;
+      }
+
+      .minutes{
+        font-family: LatoReg;
+        padding: 20px
+      }
+    
+      .servings{
+        font-family: LatoReg;
+        padding: 20px;
+      }
+    }
+  
+  }
+
+}
+}
+}
+
+@media only screen and (max-width: 1100px) {
+  .recipe-content, .your-recipe-content{
+
+    .row {
+      grid-template-columns: repeat(1, 1fr); /* Change to one column when viewport width is 1000px or less */
+    
+    
+    }
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .recipe-content, .your-recipe-content{
+    .row{
+      .recipe-food{
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 200px;
+          height: 150px;
+        }
+
+        .ingredients-direction{
+          width: 200px;
+          min-height: 150px;
+          font-size: 11px;
+
+          p{
+            font-size: 9px;
+          }
+
+          h2{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
